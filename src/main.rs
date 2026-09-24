@@ -2,7 +2,7 @@ use std::io::{self, Write};
 
 fn read_i32(prompt: &str) -> i32 {
     print!("{}", prompt);
-    io::stdout().flush().expect("Failed to flush stdout");
+    io::stdout().flush().expect("Failed to read");
 
     let mut input = String::new();
     io::stdin()
